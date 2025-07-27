@@ -1,4 +1,5 @@
-# Maintainer: Johnathon Clark <john.clark at cantab dot net>
+# Maintainer: Davide Depau <davide@depau.eu>
+# Contributor: Johnathon Clark <john.clark at cantab dot net>
 # Contributor: Jan Alexander Steffens (heftig) <heftig@archlinux.org> 
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
@@ -7,14 +8,14 @@
 
 pkgname=libfprint-elanmoc2-git
 _pkgname=libfprint
-pkgver=1.94.0+10+gd348f17
+pkgver=1.94.0+369+gf0b8bbc
 pkgrel=1
 pkgdesc="Library for fingerprint readers with patches for the support of the ELAN 0C4C."
 url="https://fprint.freedesktop.org/"
 arch=(x86_64)
 license=(LGPL)
 depends=(libgusb pixman nss systemd libgudev)
-makedepends=(git meson gtk-doc gobject-introspection)
+makedepends=(git meson gtk-doc gobject-introspection glib2-devel)
 checkdepends=(cairo)
 conflicts=(libfprint)
 provides=(libfprint=1.94.0 libfprint-2.so)

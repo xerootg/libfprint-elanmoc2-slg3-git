@@ -1,6 +1,6 @@
 pkgbase = libfprint-elanmoc2-git
 	pkgdesc = Library for fingerprint readers with patches for the support of the ELAN 0C4C.
-	pkgver = 1.94.0+10+gd348f17
+	pkgver = 1.94.0+369+gf0b8bbc
 	pkgrel = 1
 	url = https://fprint.freedesktop.org/
 	arch = x86_64
@@ -11,6 +11,7 @@ pkgbase = libfprint-elanmoc2-git
 	makedepends = meson
 	makedepends = gtk-doc
 	makedepends = gobject-introspection
+	makedepends = glib2-devel
 	depends = libgusb
 	depends = pixman
 	depends = nss
