@@ -6,9 +6,9 @@
 
 # This is a build of the experimental elanmoc2 driver by Davide Depau
 
-pkgname=libfprint-elanmoc2-git
+pkgname=libfprint-elanmoc2-slg3-git
 _pkgname=libfprint
-pkgver=1.94.0+369+gf0b8bbc
+pkgver=1.94.0+e144f226
 pkgrel=1
 pkgdesc="Library for fingerprint readers with patches for the support of the ELAN 0C4C."
 url="https://fprint.freedesktop.org/"
@@ -20,12 +20,12 @@ checkdepends=(cairo)
 conflicts=(libfprint)
 provides=(libfprint=1.94.0 libfprint-2.so)
 groups=(fprint)
-source=("git+https://gitlab.freedesktop.org/Depau/libfprint.git#branch=elanmoc2")
+source=("git+https://github.com/xerootg/libfprint.git#branch=elanmoc2")
 sha256sums=('SKIP')
 
 pkgver() {
   cd $_pkgname
-  git describe --tags | sed 's/^v//;s/^V_//;s/_/./g;s/-/+/g'
+  echo "1.94.0+$(git rev-parse --short=8 HEAD)"
 }
 
 prepare() {
