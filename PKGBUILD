@@ -3,14 +3,15 @@
 # Contributor: Jan Alexander Steffens (heftig) <heftig@archlinux.org> 
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
+# Contributor: xerootg <4009802+xerootg@users.noreply.github.com>
 
 # This is a build of the experimental elanmoc2 driver by Davide Depau
 
 pkgname=libfprint-elanmoc2-slg3-git
 _pkgname=libfprint
-pkgver=1.94.0+e144f226
+pkgver=1.94.0+9f169dcc
 pkgrel=1
-pkgdesc="Library for fingerprint readers with patches for the support of the ELAN 0C4C."
+pkgdesc="Library for fingerprint readers with patches for the support of the ELAN used in Surface Laptop Go 1, 2 and 3"
 url="https://fprint.freedesktop.org/"
 arch=(x86_64)
 license=(LGPL)

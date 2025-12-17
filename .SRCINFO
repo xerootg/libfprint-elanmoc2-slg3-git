@@ -1,6 +1,6 @@
 pkgbase = libfprint-elanmoc2-slg3-git
-	pkgdesc = Library for fingerprint readers with patches for the support of the ELAN 0C4C and 0C8A.
-	pkgver = 1.94.0+e144f226
+	pkgdesc = Library for fingerprint readers with patches for the support of the ELAN used in Surface Laptop Go 1, 2 and 3
+	pkgver = 1.94.0+9f169dcc
 	pkgrel = 1
 	url = https://fprint.freedesktop.org/
 	arch = x86_64
